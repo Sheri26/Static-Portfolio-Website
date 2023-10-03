@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav id="desktopNav">
+        <div class="logo">Sheridan Alexander</div>
+        <div>
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburgerNav">
+        <div class="logo">Sheridan Alexander</div>
+        <div class="hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menuLinks">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="profilePicContainer">
+            <img src="./assets/profile-pic.png" alt="Profile Picture">
+        </div>
+        <div class="profileText">
+            <p class="profileText_p1">Hello I'm</p>
+            <h1 class="title">Sheridan Alexander</h1>
+            <p class="profileText_p2">Backend Java Developer</p>
+            <div class="btnContainer">
+                <button class="btnDownloadCv" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btnContact" onclick="location.href = './#contact'">Contact Me</button>
+                
+            </div>
+            <div id="socialMediaContainer">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href = 'https://linkedin.com'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href = 'https://github.com'">
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        
+        <p class="profileText_p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="sectionContainer">
+            <div class="profilePicContainer">
+                <img src="./assets/about-pic.png" alt="About Profile picture" class="aboutPic">
+            </div>
+            <div class="aboutDetails">
+                <div class="aboutContainers">
+                    <div class="detailsContainer">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc Bachelor of Science degree (Computer Science)</p>
+                    </div>
+                </div>
+                <div class="textContainer">
+                    <p>I am a youngster passionate about motorsport, boxing, gaming and exercising and these are all ranked below coding on the list of favourites. My life revolves around various core values developed and exercised both in my experience as a student and in my personal life, these values are namely:
+                        <li>Do unto others as you would have done unto yourself,</li>
+                        <li>The way you do anything is the way you do everything,</li>
+                        <li>Teamwork makes the dream work,</li>
+                        <li>Increased physical acitvity keeps your both your mind and your body healthy,</li>
+                        <li>Everything cannot be done alone, but some things require your undivided attention,</li>
+                        <li>Life is about balance,</li>
+                        <li>You look good, you feel good,</li>
+                        <li>Honesty is the best policy,</li>
+                        <li>The closest you can get to perfection is practice.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--<img src="./assets/arrow.png" alt="Arrow Icon" class="iconArrow" onclick="location.href='./#education'">-->
+    </section>
+    <section id="experience">
+       
+        <p class="profileText_p1">Explore My</p>
+        <h1 class="title">Experience</h1> 
+        <div class="experienceDetails">
+            <div class="aboutContainers">
+                <div class="detailsContainer">
+                    <h2 class="experienceSub">Backend Development</h2>
+                    <div class="expArticleContainer">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            <div/>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>MySql</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Basic</p>
+                            <div/>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>Spring</h3>
+                                <p>Basic</p>
+                            <div/>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>Maven</h3>
+                                <p>Basic</p>
+                            <div/>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="detailsContainer">
+                    <h2 class="experienceSub">Frontend Development</h2>
+                    <div class="expArticleContainer">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expeerience Icon" class="icon"/>
+                            <div>
+                                <h3>Cascading Style Sheeets (CSS)</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>   
+                    </div>
+                </div>
+                <div class="detailsContainer">
+                    <h2 class="experienceSub">Other</h2>
+                    <div class="expArticleContainer">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Agile Methodology</h3>
+                                <p>Experienced</p>
+                            <div/>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Scrum Methodology</h3>
+                                <p>Experienced</p>
+                            <div/>
+                        </article>   
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Kanban Board</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>   
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Waterfall Methodology</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>   
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>LucidChart</h3>
+                                <p>Basic</p>
+                            <div/>
+                        </article>   
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Trello</h3>
+                                <p>Basic</p>
+                            <div/>
+                        </article>   
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Github</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>   
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <div>
+                                <h3>Linux (Debian)</h3>
+                                <p>Intermediate</p>
+                            <div/>
+                        </article>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="profileText_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experienceDetails">
+            <div class="aboutContainers">
+                <div class="detailsContainer colorContainer">
+                    <div class="expArticleContainer">
+                        <img src="./assets/project-1.png" alt="Project One" class="projectImg">
+                    </div>
+                    <h2 class="experienceSub projectTitle">Project One</h2>
+                    <div class="btnContainer">
+                        <button class="btnContact btnProject" onclick="location.href = 'https://github.com'">Github</button>
+                        <button class="btnContact btnProject" onclick="location.href = 'https://google.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="profileText_p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contactInfoUpperContainer">
+            <div class="contactInfoContainer">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contactIcon emailIcon">
+                <p><a href="mailto:examplemail@gmail.com">ExampleMail@gmail.com</a></p>
+            </div>
+            <div class="contactInfoContainer">
+                <img src="./assets/linkedin.png" alt="linkedIn Icon" class="icon contactIcon">
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="navLinksContainer">
+                <ul class="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Sheridan Alexander. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+/*  Phone: 600px
+    Tablet: 768px
+    Laptops: 992px
+    Large: 1200px
+*/
+
+/*LARGE SCREEN*/
+
+/*@media (width > 1200px){
+    #desktopNav {
+        display: flex;
+    }
+
+    #hamburgerNav {
+        display: none;
+    }
+}*/
+
+@media (width <= 1200px) or (width > 1200px){
+    #hamburgerNav {
+        display: none;
+    }
+
+    #desktopNav {
+        display: flex;
+    }
+
+    #profile {
+        display: flex;
+        height: 90vh;
+        gap: 5rem;
+        justify-content: center;
+    }
+
+    section {
+        margin: 0 4rem;
+    }
+
+    .profilePicContainer {
+        height: 400px;
+        width: 400px;
+        margin: auto 0;
+    }
+
+
+
+    .profileText_p2, .experienceSub {
+        font-size: 1.75rem;
+    }
+
+    .aboutContainers {
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    /*nav {
+        justify-content: space-around;
+    }*/
+
+    .menuLinks a {
+        font-size: 1.5rem;
+    }
+
+    section {
+        height: 96vh;
+    }
+
+    .sectionContainer {
+        display: flex;
+        gap: 4rem;
+    }
+
+    #projects {
+        top: 400px;
+    }
+
+    #contact {
+        top: 300px;
+    }
+
+    footer {
+        top: 250px;
+    }
+
+    
+}
+
+/*MEDUIM SCREEN*/
+
+/*@media (width <= 992px){
+    #hamburgerNav {
+        display: flex;
+    }
+
+    #desktopNav {
+        display: none;
+    }
+
+    .textContainer p, .textContainer li{
+        font-size: meduim;
+    }
+
+    /*.textContainer {
+        text-align: justify;
+    }
+
+    #profile {
+        height: 80vh;
+    }
+
+    /*section {
+        margin: 2% 4rem;
+    }
+}*/
+
+
+/*TABLET SCREEN*/
+
+@media (width <= 768px){
+    
+    .profilePicContainer {
+        height: 300px;
+        width: 300px;
+        margin: auto 4.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .profileText_p2 {
+        font-size: 1.4rem;
+    }
+
+    .textContainer p, .textContainer li{
+        font-size: 0.85rem;
+    }
+
+    .menuLinks.open li:hover, .menuLinks.open a:hover {
+        color: blue;
+        text-decoration-color: blue;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+    }
+
+    .experienceSub {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .aboutContainers {
+        gap: 1.15rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin: auto 3rem;
+    }
+
+    #hamburgerNav {
+        display: flex;
+        gap: 15rem;
+        margin-top: 1rem;
+    }
+
+    .hamburgerMenu {
+        margin: auto 3rem;
+    }
+
+    #desktopNav {
+        display: none;
+    }
+    
+    /*nav {
+        justify-content: flex-start;
+    }*/
+
+    #profile {
+        display: grid;
+        gap: 2rem;
+        height: 70vh;
+        justify-content: center;
+    }
+
+    .menuLinks a {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 2% 3rem;
+        height: 80vh;
+    }
+
+    .textContainer p, .textContainer li{
+        font-size: small;
+    }
+
+    .sectionContainer {
+        display: grid;
+        gap: 1rem;
+    }
+
+    #about {
+        /*display: grid;
+        position: relative;*/
+        top: 250px;
+    }
+
+    #experience {
+        top: 650px;
+    }
+
+    .aboutPic {
+        margin: 0 42%;
+    }
+
+    #projects {
+        top: 1100px;
+    }
+
+    #contact {
+        top: 1100px;
+    }
+
+    footer {
+        top: 1100px;
+    }
+
+}
+
+/* MOBILE LARGE SCREEN*/
+
+@media (width <= 425px){
+    /*.logo {
+        font-size: 1.2rem;
+    }*/
+
+    #hamburgerNav {
+        /*margin-left: 150px;*/
+        gap: 25rem;
+    }
+
+    .hamburgerMenu {
+        margin: auto -16.5rem;
+    }
+
+    /*#profile {
+        
+    }*/
+}
+
+/*
+@media screen and (max-width:1400px) {
+    #profile {
+        height: 83vh;
+        margin: 6rem;
+    }
+
+    .aboutContainers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    #hamburgerNav{
+        display: flex;
+    }
+
+    #desktopNav{
+        display: none;
+    }
+
+    #experience, .experienceDetails {
+        margin-top: 2rem;
+    }
+
+    #profile, .sectionContainer {
+        display: block;
+    }
+
+    section, .sectionContainer {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .aboutDetails {
+        position: relative;
+        top: 250px;
+        text-align: justify;
+    }
+
+    .textContainer {
+        text-align: justify;
+    }
+
+}    
+
+@media screen and (min-width:1001px) {
+    
+    #hamburgerNav{
+        display: none;
+    }
+}
+*/
