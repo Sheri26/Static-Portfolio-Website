@@ -33,7 +33,7 @@
     }
 
     section {
-        margin: 0 4rem;
+        margin: 1rem 4rem;
     }
 
     .profilePicContainer {
@@ -82,6 +82,7 @@
     }
 
     #contact {
+        display: flex;
         top: 300px;
     }
 
@@ -89,7 +90,9 @@
         top: 250px;
     }
 
-    
+    nav {
+        justify-content: space-around;
+    }
 }
 
 /*MEDUIM SCREEN*/
@@ -241,23 +244,90 @@
 /* MOBILE LARGE SCREEN*/
 
 @media (width <= 425px){
+    .logo {
+        margin: auto 2rem;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    #profile, #about {
+        justify-content: initial;
+    }
+
+    #about {
+        display: grid;
+    }
+
+    .aboutPic {
+        margin: 0;
+    }
+
+    #experience, #projects {
+        display: inline-block;
+    }
+
+    #projects {
+        left: 3rem;
+    }
+}
+
+/* MOBILE SMALL SCREEN*/
+
+/*@media (width <= 320px){
     /*.logo {
         font-size: 1.2rem;
     }*/
 
-    #hamburgerNav {
+/*    #hamburgerNav {
         /*margin-left: 150px;*/
-        gap: 25rem;
+/*        gap: 25rem;
     }
 
     .hamburgerMenu {
         margin: auto -16.5rem;
     }
 
-    /*#profile {
-        
+    #profile {
+        position: relative;
+        left: 9rem;
+    }
+
+    .aboutPic {
+        margin: 0;
+    }
+
+    #about {
+        display: grid;
+        left: 50px;
+    }
+
+    #experience {
+        display: inline-block;
+    }
+
+    .aboutContainers {
+        gap: 1rem;
+    }
+
+    #projects {
+        display: inline-block;
+        left: 100px;
+    }
+
+    #contact {
+        display: inline-block;
+        left: 40px;
+    }
+
+    footer {
+        left: 160px;
+    }
+    /*.detailsContainer {
+       
     }*/
-}
+
 
 /*
 @media screen and (max-width:1400px) {

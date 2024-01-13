@@ -33,7 +33,7 @@ nav, .navLinks {
 }
 
 nav {
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
     height: 17vh;
 }
@@ -398,7 +398,7 @@ btnProject {
 
 
 #contact {
-    display: flex;
+    /*display: flex;*/
     position: relative;
     /*top: 300px;*/
     justify-content: center;
